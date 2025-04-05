@@ -11,13 +11,13 @@
 </head>
 
 <body>
-    <header class="header">
-        <nav class="nav">
+    <!-- <header class="header">
+        <nav class="nav"> -->
             <!-- <a href="#">Для кого?</a>
             <a href="#">Обо мне</a>
             <a href="#">Гарантии</a>
             <a href="#">Программы</a> -->
-            <a href="#feature-link">Обо мне</a>
+            <!-- <a href="#feature-link">Обо мне</a>
             <a href="#my-projects">Мои проекты</a>
             <a href="#01-tal">Талантополия</a>
             <a href="#trains">Тренинги</a>
@@ -38,11 +38,46 @@
                 </div>
                 <span>Бизнес</span>
             </div>
-        </div>
+        </div> -->
         <!-- <div class="buttons">
             <button class="btn btn-outline">Корпы</button>
             <button class="btn btn-dark">Госсектор</button>
         </div> -->
+    <!-- </header> -->
+    <header class="header">
+        <button class="menu-toggle">
+            <img src="./media/img/menu.png" alt="">
+        </button>
+        
+        <div class="logo"><img src="./media/img/logo.png" alt="Логотип"></div>
+        
+        <nav class="nav">
+            <!-- <a href="#">Для кого?</a>
+            <a href="#">Обо мне</a>
+            <a href="#">Гарантии</a>
+            <a href="#">Программы</a> -->
+            <a href="#feature-link">Обо мне</a>
+            <a href="#my-projects">Мои проекты</a>
+            <a href="#01-tal">Талантополия</a>
+            <a href="#trains">Тренинги</a>
+            <a href="#03-courses">Курсы</a>
+            <a href="#contact-link">Контакты</a>
+        </nav>
+        
+        <div class="class-slider">
+            <div class="class-slide__item">
+                <div class="icon-wrap">
+                    <img src="./media/img/governance-w.png" alt="Госсектор">
+                </div>
+                <span>Гос-сфера</span>
+            </div>
+            <div class="class-slide__item active">
+                <div class="icon-wrap">
+                    <img src="./media/img/market-w.png" alt="Бизнес">
+                </div>
+                <span>Бизнес</span>
+            </div>
+        </div>
     </header>
 
     <main>
@@ -238,7 +273,7 @@
             </div>
         </section>
         <section id="my-projects" class="projects-section">
-            <div class="container">
+            <div class="container-project">
                 <div class="section-header">
                     <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -583,7 +618,7 @@
                                 </svg>
                                 Оформить
                             </a>
-                            <img style="width: 30%; top: 10px; right: -70px;" class="bg-icon" src="./media/img/shuttle.png" alt="">
+                            <img style="width: 52%; top: 10px; right: -70px;" class="bg-icon" src="./media/img/shuttle.png" alt="">
 
                         </div>
 
@@ -1303,6 +1338,41 @@
                 }
             }
         });
+        document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav');
+    
+    function toggleMenu() {
+        menuToggle.classList.toggle('active');
+        nav.classList.toggle('active');
+    }
+    
+    function closeMenu(e) {
+        if (!nav.contains(e.target) && !menuToggle.contains(e.target)) {
+            menuToggle.classList.remove('active');
+            nav.classList.remove('active');
+        }
+    }
+    
+    // Обработчики событий
+    menuToggle.addEventListener('click', toggleMenu);
+    document.addEventListener('click', closeMenu);
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 1200) {
+            menuToggle.classList.remove('active');
+            nav.classList.remove('active');
+        }
+    });
+    
+    // Закрытие меню при клике на ссылки
+    nav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            if (window.innerWidth <= 1200) {
+                toggleMenu();
+            }
+        });
+    });
+});
     </script>
 </body>
 

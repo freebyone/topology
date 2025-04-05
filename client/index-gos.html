@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header"> 
         <nav class="nav">
             <!-- <a href="#">Для кого?</a>
             <a href="#">Обо мне</a>
@@ -1250,6 +1250,41 @@
                 }
             }
         });
+        document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav');
+    
+    function toggleMenu() {
+        menuToggle.classList.toggle('active');
+        nav.classList.toggle('active');
+    }
+    
+    function closeMenu(e) {
+        if (!nav.contains(e.target) && !menuToggle.contains(e.target)) {
+            menuToggle.classList.remove('active');
+            nav.classList.remove('active');
+        }
+    }
+    
+    // Обработчики событий
+    menuToggle.addEventListener('click', toggleMenu);
+    document.addEventListener('click', closeMenu);
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 1200) {
+            menuToggle.classList.remove('active');
+            nav.classList.remove('active');
+        }
+    });
+    
+    // Закрытие меню при клике на ссылки
+    nav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            if (window.innerWidth <= 1200) {
+                toggleMenu();
+            }
+        });
+    });
+});
     </script>
 </body>
 

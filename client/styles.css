@@ -73,7 +73,7 @@
     display: flex;
 }
 .cardd-title {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 700;
     margin-bottom: 5px;
     color: #000;
@@ -133,23 +133,74 @@
         justify-content: flex-start;
     }
 }
-
-
+@media (max-width: 1200px) {
+    .class-slider {
+        width: 32%;
+    }
+}
 @media (min-width: 200px) and (max-width: 1100px) {
     .class-slide__item span {
     font-size: 11px;
     left: unset;
     }
-    .class-slider #active-product img {
-        width: 0%;
-        height: 0%;
+    .class-slider .class-slide__item .icon-wrap {
+        width: 20px;
+        height: 20px;
     }
-    .class-slider .class-slide__item img {
-        width: 0%;
-        height: 0%;
+    .class-slider #active-product .icon-wrap {
+        width: 20px;
+        height: 20px;
+    }
+    .video-panel {
+        display: none;
+    }
+    .c1 {
+        width: 100%;
+    }
+    .feature-card .f-step h3{
+        font-size: 16px;
+    }
+    .feature-card .f-step {
+        font-size: 16px;
+    }
+    .feature-card .f-step .f-desc p {
+        font-size: 14px;
     }
 }
-
+@media (min-width: 200px) and (max-width: 1700px) {
+    .title {
+        font-size: 80px;
+        width: 50%;
+    }
+    .btn {
+        font-size: 16px;
+        background-color: #4169e1;
+        border-radius: 24px;
+        color: #fff;
+        height: 40%;
+        padding: 10px;
+        border: none;
+    }
+    .hashtag {
+        font-size: 24px;
+        width: 60%;
+    }
+    .description {
+        width: 60%;
+    }
+   .class-slider .class-slide__item .icon-wrap {
+        width: 30px;
+        height: 30px;
+    }
+    .class-slider #active-product .icon-wrap {
+        width: 30px;
+        height: 30px;
+    } 
+    .class-slide__item span {
+        font-size: 12px;
+        left: unset;
+        }
+}
 
 @media (min-width: 200px) and (max-width: 800px) {
     .hero-content {
@@ -175,11 +226,28 @@
     .description {
         width: 80%;
     }
+    .class-slider .class-slide__item .icon-wrap {
+        width: 0px;
+        height: 0px;
+    }
+    .class-slider #active-product .icon-wrap {
+        width: 0px;
+        height: 0px;
+    }
+    .class-slider {
+        width: 40%;
+    }
 }
 
 .description {
     font-size: 18px;
 }
+@media(max-width: 600px) {
+    .projects-section .section-title {
+        margin-left: 2rem;
+    }
+}
+
 @media (min-width: 199px) and (max-width: 800px) {
     .description {
         font-size: 12px;
@@ -192,18 +260,6 @@
     }
     .c3 {
         display: none;
-    }
-    .c1 {
-        width: 100%;
-    }
-    .feature-card .f-step h3{
-        font-size: 16px;
-    }
-    .feature-card .f-step {
-        font-size: 16px;
-    }
-    .feature-card .f-step .f-desc p {
-        font-size: 14px;
     }
 }
 @media(max-width: 3000px) {
@@ -219,10 +275,15 @@
     }
 }
 
+
 @media(max-width: 1440px) {
     .rotating-text {
         width: 120px;
         height: 120px;
+    }
+    .contact-card{
+        width: 166px;
+        height: 86px;
     }
 }
 @media(max-width: 1024px) {
@@ -248,6 +309,11 @@
     }
     .program-card {
         margin-top: 1rem;
-        height: 120%;
+        height: auto;
     }
+}
+
+.container-project {
+    width: 100%;
+
 }
