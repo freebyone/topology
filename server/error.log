@@ -1,0 +1,21 @@
+curl -X POST http://localhost:3000/submit-form \
+-H "Content-Type: application/json" \
+-d '{
+  "name": "Иван Иванов",
+  "phone": "+1234567890",
+  "email": "ivan@example.com",
+  "product_id": "650f1b2e4f4b4c4f4b4c4f4b"
+}'
+
+curl -X POST http://localhost:3000/add-product \
+-H "Content-Type: application/json" \
+-d '{
+  "title": "Иван Иванов",
+  "description": "+1234567890",
+  "price": "ivan@example.com",
+  "category": "650f1b2e4f4b4c4f4b4c4f4b"
+}'
+
+/products
+
+curl -X GET http://localhost:3000/products 
