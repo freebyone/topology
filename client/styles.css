@@ -12,11 +12,12 @@
 }
 .h1-courses h1 {
     display: flex;
+    /* width: 100%; */
     margin-left: .8rem;
     font-size: 44px;
     font-weight: bold;
     margin-bottom: 2rem;
-    margin-left: 4rem;
+    padding-left: 4rem;
     margin-top: 4rem;
 }
 .cardd {
@@ -28,7 +29,7 @@
 }
 
 .cardd-image {
-    width: 100%;
+    width: 98%;
     height: 300px;
     overflow: hidden;
     display: flex;
@@ -131,123 +132,5 @@
 @media (min-width: 1025px) {
     .container {
         justify-content: flex-start;
-    }
-}
-
-
-@media (min-width: 200px) and (max-width: 1100px) {
-    .class-slide__item span {
-    font-size: 11px;
-    left: unset;
-    }
-    .class-slider #active-product img {
-        width: 0%;
-        height: 0%;
-    }
-    .class-slider .class-slide__item img {
-        width: 0%;
-        height: 0%;
-    }
-}
-
-
-@media (min-width: 200px) and (max-width: 800px) {
-    .hero-content {
-        padding-left: 0rem;
-        padding-bottom: 1rem;
-        padding-top: 2rem;
-        font-size: 14px;
-    }
-    .title {
-        font-size: 70px;
-    }
-    .cardd {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .btn {
-        font-size: 16px;
-    }
-    .hashtag {
-        font-size: 34px;
-    }
-    .description {
-        width: 80%;
-    }
-}
-
-.description {
-    font-size: 18px;
-}
-@media (min-width: 199px) and (max-width: 800px) {
-    .description {
-        font-size: 12px;
-    }
-    .event-name {
-        font-size: 12px;
-    }
-    .date {
-        font-size: 12px;
-    }
-    .c3 {
-        display: none;
-    }
-    .c1 {
-        width: 100%;
-    }
-    .feature-card .f-step h3{
-        font-size: 16px;
-    }
-    .feature-card .f-step {
-        font-size: 16px;
-    }
-    .feature-card .f-step .f-desc p {
-        font-size: 14px;
-    }
-}
-@media(max-width: 3000px) {
-    .profile-info {
-        border-radius: 20px 20px 20px 20px;
-    }
-}
-
-@media(max-width: 1680px) {
-    .rotating-text {
-        width: 150px;
-        height: 150px;
-    }
-}
-
-@media(max-width: 1440px) {
-    .rotating-text {
-        width: 120px;
-        height: 120px;
-    }
-}
-@media(max-width: 1024px) {
-    .rotating-text {
-        width: 80px;
-        height: 80px;
-    }
-}
-@media(max-width: 768px) {
-    .rotating-text {
-        width: 80px;
-        height: 80%;
-    }
-    .c1 {
-        flex-direction: column;
-        gap: 2rem;
-    }
-    .feature-card .f-step {
-        width: 90%;
-    }
-    .telen-title {
-        margin-left: 1rem;
-    }
-    .program-card {
-        margin-top: 1rem;
-        height: 120%;
     }
 }
