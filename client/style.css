@@ -1432,7 +1432,7 @@ input[type=tel] {
     font-size: 24px;
     margin-bottom: 60px;
     opacity: .9;
-    width: 40%
+    width: 80%
 }
 
 .testimonials__slider {
@@ -1449,7 +1449,7 @@ input[type=tel] {
 .testimonial-card {
     flex: 0 0 auto;
     width: 28%;
-    height: 58vh;
+    height: 40vh;
     background-color: #fff;
     border-radius: 20px;
     padding: 20px;
@@ -1464,7 +1464,6 @@ input[type=tel] {
     left: 20px;
     width: 12px;
     height: 12px;
-    background-color: #000;
     border-radius: 50%
 }
 
