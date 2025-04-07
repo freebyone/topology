@@ -11,13 +11,17 @@
 </head>
 
 <body>
-    <header class="header"> 
-        <nav class="nav">
+    <!-- <header class="header">
+        <nav class="nav"> -->
             <!-- <a href="#">Для кого?</a>
             <a href="#">Обо мне</a>
             <a href="#">Гарантии</a>
             <a href="#">Программы</a> -->
-            <a href="#feature-link">Программы</a>
+            <!-- <a href="#feature-link">Обо мне</a>
+            <a href="#my-projects">Мои проекты</a>
+            <a href="#01-tal">Талантополия</a>
+            <a href="#trains">Тренинги</a>
+            <a href="#03-courses">Курсы</a>
             <a href="#contact-link">Контакты</a>
         </nav>
         <div class="logo"><img src="./media/img/logo.png" alt=""></div>
@@ -34,17 +38,52 @@
                 </div>
                 <span>Бизнес</span>
             </div>
-        </div>
+        </div> -->
         <!-- <div class="buttons">
             <button class="btn btn-outline">Корпы</button>
             <button class="btn btn-dark">Госсектор</button>
         </div> -->
+    <!-- </header> -->
+    <header class="header">
+        <button class="menu-toggle">
+            <img src="./media/img/menu.png" alt="">
+        </button>
+        
+        <div class="logo"><img src="./media/img/logo.png" alt="Логотип"></div>
+        
+        <nav class="nav">
+            <!-- <a href="#">Для кого?</a>
+            <a href="#">Обо мне</a>
+            <a href="#">Гарантии</a>
+            <a href="#">Программы</a> -->
+            <a href="#feature-link">Обо мне</a>
+            <a href="#my-projects">Мои проекты</a>
+            <a href="#01-tal">Талантополия</a>
+            <a href="#trains">Тренинги</a>
+            <a href="#03-courses">Курсы</a>
+            <a href="#contact-link">Контакты</a>
+        </nav>
+        
+        <div class="class-slider">
+            <div class="class-slide__item">
+                <div class="icon-wrap">
+                    <img src="./media/img/governance-w.png" alt="Госсектор">
+                </div>
+                <span>Гос-сфера</span>
+            </div>
+            <div class="class-slide__item active">
+                <div class="icon-wrap">
+                    <img src="./media/img/market-w.png" alt="Бизнес">
+                </div>
+                <span>Бизнес</span>
+            </div>
+        </div>
     </header>
 
     <main>
         <section class="hero">
             <div class="hero-content">
-                <div class="hashtag"># ВЗЛЕТ</div>
+                <a class="hashtag" href="#id-rocket"><img src="./media/img/Group 56.svg" alt=""><span>#ROCKET</span></a>
                 <h1 class="title">ТАЛАНТО<br>ПОЛИЯ</h1>
                 <div class="cta-buttons">
                     <button class="btn btn-primary">Оставить заявку</button>
@@ -57,42 +96,61 @@
                 </p>
             </div>
             <div class="hero-image">
-                <img src="./media/img/man.png" alt="Portrait">
-
+                <img src="./media/port1.png" alt="Portrait">
             </div>
             <!-- <div class="video-block">
                 <iframe src="" frameborder="0"></iframe>
             </div> -->
             <div class="video-panel">
-                
+
                 <div class="video-section vid-white">
-                    <p   style="opacity: 1; display: block;">//ВИДЕО</p>
+                    <p style="opacity: 1; display: block; ">//ВИДЕО</p>
                 </div>
                 <div id="meet-close" style="position: relative;z-index: 6; " class="video-section">
-                    <p style="top: -42px;">ПОЗНАКОМИМСЯ ПОБЛИЖЕ?</p>
+                    <p class="meet-close-p">ПОЗНАКОМИМСЯ ПОБЛИЖЕ?</p>
                     <div class="play-btn">
                         <img src="./media/img/playbtn.svg" alt="Play">
                     </div>
                 </div>
                 <div id="about-prog" style="border-left: 1px solid #fff;" class="video-section">
-                    <p style="top: -42px;">О ПРОГРАММЕ</p>
+                    <p class="meet-close-p">О ПРОГРАММЕ</p>
                     <div class="play-btn">
                         <img src="./media/img/playbtn.svg" alt="Play">
                     </div>
                 </div>
             </div>
         </section>
-
+        <div class="mobile-video-panel">
+            <div class="video-title">
+                <p style="">//ВИДЕО</p>
+            </div>
+            <div class="video-sec">
+                <div class="text-video">
+                    <p>ПОЗНАКОМИМСЯ ПОБЛИЖЕ?</p>
+                </div>
+                <div class="">
+                    <img src="./media/img/playbtn.svg" alt="Play">
+                </div>
+            </div>
+            <div class="video-sec" style=" border-radius: 0 0 0 18px;">
+                <div class="text-video">
+                    <p>О ПРОГРАММЕ</p>
+                </div>
+                <div class="">
+                    <img src="./media/img/playbtn.svg" alt="Play">
+                </div>
+            </div>
+        </div>
         <section class="features">
             <div class="feature-card c1">
-                <div class="f-step">
+                <a class="f-step" style="text-decoration: none; color: inherit;" href="#01-tal">
                     <p>1</p>
                     <div class="f-desc">
                         <h3>ТАЛАНТО<br>ПОЛИЯ</h3>
                         <p>Обучение у успешных предпренимателей и топ-менеджеров</p>
                     </div>
-                </div>
-                <div class="f-step">
+                </a>
+                <a class="f-step" style="text-decoration: none; color: inherit;" href="#trains">
                     <p>2</p>
                     <div class="f-desc">
                         <h3>ТРЕНИ<br>НГИ</h3>
@@ -100,8 +158,8 @@
                             Авторская методика Дмитрия Коноплянского
                             Символов: 210</p>
                     </div>
-                </div>
-                <div class="f-step">
+                </a>
+                <a class="f-step" style="text-decoration: none; color: inherit;" href="#03-courses">
                     <p>3</p>
                     <div class="f-desc">
                         <h3>АВТОРСКИЕ<br>КУРСЫ</h3>
@@ -109,7 +167,7 @@
                             Авторская методика Дмитрия Коноплянского
                             Символов: 210</p>
                     </div>
-                </div>
+                </a>
 
             </div>
             <div class="feature-card c3">
@@ -143,6 +201,16 @@
             </div>
         </section>
         <section class="about-me">
+            <div class="section-head" style="display: flex; align-items: center;">
+                <span style="width: 38px;" class="slide__btn__icon">
+                    <svg width="100%" height="100%" viewBox="0 0 17 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3.22218 15.2222C2.79261 15.6518 2.79261 16.3482 3.22218 16.7778C3.65176 17.2074 4.34824 17.2074 4.77782 16.7778L3.22218 15.2222ZM16.1 5C16.1 4.39249 15.6075 3.9 15 3.9L5.1 3.9C4.49249 3.9 4 4.39249 4 5C4 5.60751 4.49249 6.1 5.1 6.1L13.9 6.1L13.9 14.9C13.9 15.5075 14.3925 16 15 16C15.6075 16 16.1 15.5075 16.1 14.9L16.1 5ZM4.77782 16.7778L15.7778 5.77782L14.2222 4.22218L3.22218 15.2222L4.77782 16.7778Z"
+                            fill="currentColor" />
+                    </svg>
+                </span>
+                <h1 style="font-size: 42px; margin-left: .5rem;">Обо мне</h1>
+            </div>
             <div class="container">
                 <div class="profile-card">
                     <div class="profile-photo">
@@ -150,54 +218,71 @@
                         <div class="profile-text">
                             <p class="greeting">Привет,</p>
                             <h1 class="name">Меня зовут <span class="highlight">Дмитрий</span></h1>
-                            <p class="bio">Коуч с опытом работы в продюсировании и режиссуре, а также в сотрудничестве с высокопоставленными лидерами.</p>
+                            <p class="bio">Коуч с опытом работы в продюсировании и режиссуре, а также в сотрудничестве с
+                                высокопоставленными лидерами.</p>
                         </div>
                     </div>
-                    
+
                     <div class="profile-info">
-                        <h2 class="section-title">Обо мне и кому я помогаю</h2>
-                        
+                        <h2 class="section-title">Кто я и кому я могу помочь</h2>
+
                         <div class="info-card">
-                            <h3>Обо мне:</h3>
-                            <p>Моя программа помогает госслужащим развивать лидерские качества, повышать личную эффективность и выстраивать устойчивые профессиональные связи. Конфиденциально, практично, с фокусом на результат.</p>
+                            <!-- <h3>Обо мне:</h3> -->
+                            <p>Моя программа помогает госслужащим развивать лидерские качества, повышать личную
+                                эффективность и выстраивать устойчивые профессиональные связи. Конфиденциально,
+                                практично, с фокусом на результат.</p>
                         </div>
-                        
+
                         <div class="info-card">
                             <h3>Для кого?</h3>
                             <p>Динамическое описание под кнопку ГОСы КОРПы</p>
                         </div>
-                        
+
                         <div class="divider"></div>
-                        
+
                         <h2 class="section-title">Мои контакты</h2>
-                        
+
                         <div class="contacts">
                             <a href="mailto:test@gmail.com" class="contact-card email">
                                 <div class="icon">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M22 6L12 13L2 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z"
+                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M22 6L12 13L2 6" stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
                                     </svg>
                                 </div>
                                 <div class="contact-text">test@gmail.com</div>
                             </a>
-                            
+
                             <a href="https://t.me/tgnickname" class="contact-card telegram">
                                 <div class="icon">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M22 2L11 13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M22 2L11 13" stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="white" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                 </div>
                                 <div class="contact-text">@tgnickname</div>
                             </a>
-                            
+
                             <a href="#" class="contact-card other">
                                 <div class="icon">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M12 16V12" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M12 8H12.01" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                                            stroke="#333" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M12 16V12" stroke="#333" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M12 8H12.01" stroke="#333" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
                                     </svg>
                                 </div>
                                 <div class="contact-text">test@gmail.com</div>
@@ -207,8 +292,8 @@
                 </div>
             </div>
         </section>
-        <section class="projects-section">
-            <div class="container">
+        <section id="my-projects" class="projects-section">
+            <div class="container-project">
                 <div class="section-header">
                     <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -324,9 +409,6 @@
                         <!-- Testimonial 1 -->
                         <div class="testimonial-card">
                             <div class="testimonial-card__dot"></div>
-                            <div class="testimonial-card__video">
-                                <div class="play-button"></div>
-                            </div>
                             <h3 class="testimonial-card__name">Татьяна К.</h3>
                             <p class="testimonial-card__text">
                                 Прошел программу по бизнес-стратегиям, и это было невероятно полезно. Коуч создает
@@ -337,9 +419,6 @@
                         <!-- Testimonial 2 -->
                         <div class="testimonial-card">
                             <div class="testimonial-card__dot"></div>
-                            <div class="testimonial-card__video">
-                                <div class="play-button"></div>
-                            </div>
                             <h3 class="testimonial-card__name">Татьяна К.</h3>
                             <p class="testimonial-card__text">
                                 Прошел программу по бизнес-стратегиям, и это было невероятно полезно. Коуч создает
@@ -350,9 +429,6 @@
                         <!-- Testimonial 3 -->
                         <div class="testimonial-card">
                             <div class="testimonial-card__dot"></div>
-                            <div class="testimonial-card__video">
-                                <div class="play-button"></div>
-                            </div>
                             <h3 class="testimonial-card__name">Татьяна К.</h3>
                             <p class="testimonial-card__text">
                                 Прошел программу по бизнес-стратегиям, и это было невероятно полезно. Коуч создает
@@ -363,9 +439,6 @@
                         <!-- Additional testimonials for scrolling -->
                         <div class="testimonial-card">
                             <div class="testimonial-card__dot"></div>
-                            <div class="testimonial-card__video">
-                                <div class="play-button"></div>
-                            </div>
                             <h3 class="testimonial-card__name">Татьяна К.</h3>
                             <p class="testimonial-card__text">
                                 Прошел программу по бизнес-стратегиям, и это было невероятно полезно. Коуч создает
@@ -374,9 +447,6 @@
                         </div>
                         <div class="testimonial-card">
                             <div class="testimonial-card__dot"></div>
-                            <div class="testimonial-card__video">
-                                <div class="play-button"></div>
-                            </div>
                             <h3 class="testimonial-card__name">Татьяна К.</h3>
                             <p class="testimonial-card__text">
                                 Прошел программу по бизнес-стратегиям, и это было невероятно полезно. Коуч создает
@@ -385,9 +455,6 @@
                         </div>
                         <div class="testimonial-card">
                             <div class="testimonial-card__dot"></div>
-                            <div class="testimonial-card__video">
-                                <div class="play-button"></div>
-                            </div>
                             <h3 class="testimonial-card__name">Татьяна К.</h3>
                             <p class="testimonial-card__text">
                                 Прошел программу по бизнес-стратегиям, и это было невероятно полезно. Коуч создает
@@ -395,9 +462,8 @@
                             </p>
                         </div>
                         <div class="testimonial-card">
-                            <div class="testimonial-card__dot"></div>
-                            <div class="testimonial-card__video">
-                                <div class="play-button"></div>
+                            <div class="testimonial-card__dot">
+                                <p>``</p>
                             </div>
                             <h3 class="testimonial-card__name">Татьяна К.</h3>
                             <p class="testimonial-card__text">
@@ -429,11 +495,10 @@
                 </div>
             </div>
         </section>
-        <section class="programs-section">
+        <section id="01-tal" class="programs-section">
             <div style="display: flex; align-items: center;">
                 <span style="width: 38px;" class="slide__btn__icon">
-                    <svg width="100%" height="100%" viewBox="0 0 17 21" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
+                    <svg width="100%" height="100%" viewBox="0 0 17 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M3.22218 15.2222C2.79261 15.6518 2.79261 16.3482 3.22218 16.7778C3.65176 17.2074 4.34824 17.2074 4.77782 16.7778L3.22218 15.2222ZM16.1 5C16.1 4.39249 15.6075 3.9 15 3.9L5.1 3.9C4.49249 3.9 4 4.39249 4 5C4 5.60751 4.49249 6.1 5.1 6.1L13.9 6.1L13.9 14.9C13.9 15.5075 14.3925 16 15 16C15.6075 16 16.1 15.5075 16.1 14.9L16.1 5ZM4.77782 16.7778L15.7778 5.77782L14.2222 4.22218L3.22218 15.2222L4.77782 16.7778Z"
                             fill="currentColor" />
@@ -444,98 +509,120 @@
             <div class="container">
                 <div class="programs-grid">
                     <!-- Card 1: KickStart -->
-                    <div class="program-card kickstart">
+                    <div id="id-kickstart" class="program-card kickstart">
                         <div class="card-content">
                             <div class="card-number">
                                 <div class="number-circle">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                                        <path d="M13.5 1.5L15 0h7.5L24 1.5v7.5L22.5 10.5H15L13.5 9V1.5zm-3 3L12 3h7.5L21 4.5v7.5L19.5 13.5H12l-1.5-1.5V4.5z"></path>
-                                    </svg>
+                                    <img style="width: 22px;" src="./media/img/Synchronize.svg" alt="">
                                 </div>
                                 <span>01</span>
                             </div>
-                            
+
                             <h2 class="card-title">KickStart</h2>
-                            
+
                             <div class="card-description">
-                                <p>Клиент приходит либо на программу выше (в программах добавить переключатель корпы/гос), либо на тренинг</p>
+                                <p>Клиент приходит либо на программу выше (в программах добавить переключатель
+                                    корпы/гос), либо на тренинг</p>
                                 <p>Скрипт сам узнает категорию продажи.</p>
                                 <p>Необходимые данные клиента: ФИО, тел, tg || email</p>
                                 <p>Спроектировать БД по сущностям user, courses, sells (id_user -> id_courses)</p>
                             </div>
-                            
+
                             <a href="#" class="card-button">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                                    <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"
+                                    fill="currentColor">
+                                    <path
+                                        d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z">
+                                    </path>
                                 </svg>
                                 Оформить
                             </a>
+                            <img style="right: -100px;" class="bg-icon" src="./media/img/graph.png" alt="">
+
                         </div>
-                        
+
                         <div class="card-background"></div>
                     </div>
-                    
+
                     <!-- Card 2: Global -->
-                    <div class="program-card global">
+                    <div id="id-global" class="program-card global">
                         <div class="card-content">
                             <div class="card-number">
                                 <div class="number-circle">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                                        <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-2.29-2.333A17.9 17.9 0 0 1 8.027 13H4.062a8.008 8.008 0 0 0 5.648 6.667zM10.03 13c.151 2.439.848 4.73 1.97 6.752A15.905 15.905 0 0 0 13.97 13h-3.94zm9.908 0h-3.965a17.9 17.9 0 0 1-1.683 6.667A8.008 8.008 0 0 0 19.938 13zM4.062 11h3.965A17.9 17.9 0 0 1 9.71 4.333 8.008 8.008 0 0 0 4.062 11zm5.969 0h3.938A15.905 15.905 0 0 0 12 4.248 15.905 15.905 0 0 0 10.03 11zm4.259-6.667A17.9 17.9 0 0 1 15.973 11h3.965a8.008 8.008 0 0 0-5.648-6.667z"></path>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"
+                                        fill="currentColor">
+                                        <path
+                                            d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-2.29-2.333A17.9 17.9 0 0 1 8.027 13H4.062a8.008 8.008 0 0 0 5.648 6.667zM10.03 13c.151 2.439.848 4.73 1.97 6.752A15.905 15.905 0 0 0 13.97 13h-3.94zm9.908 0h-3.965a17.9 17.9 0 0 1-1.683 6.667A8.008 8.008 0 0 0 19.938 13zM4.062 11h3.965A17.9 17.9 0 0 1 9.71 4.333 8.008 8.008 0 0 0 4.062 11zm5.969 0h3.938A15.905 15.905 0 0 0 12 4.248 15.905 15.905 0 0 0 10.03 11zm4.259-6.667A17.9 17.9 0 0 1 15.973 11h3.965a8.008 8.008 0 0 0-5.648-6.667z">
+                                        </path>
                                     </svg>
                                 </div>
                                 <span>02</span>
                             </div>
-                            
+
                             <h2 class="card-title">Global</h2>
-                            
+
                             <div class="card-description">
-                                <p>Клиент приходит либо на программу выше (в программах добавить переключатель корпы/гос), либо на тренинг</p>
+                                <p>Клиент приходит либо на программу выше (в программах добавить переключатель
+                                    корпы/гос), либо на тренинг</p>
                                 <p>Скрипт сам узнает категорию продажи.</p>
                                 <p>Необходимые данные клиента: ФИО, тел, tg || email</p>
                                 <p>Спроектировать БД по сущностям user, courses, sells (id_user -> id_courses)</p>
                             </div>
-                            
+
                             <a href="#" class="card-button global-button">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                                    <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"
+                                    fill="currentColor">
+                                    <path
+                                        d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z">
+                                    </path>
                                 </svg>
                                 Оформить
                             </a>
+                            <img class="bg-icon" src="./media/img/global-network.png" alt="">
+
                         </div>
-                        
+
                         <div class="card-background"></div>
                     </div>
-                    
+
                     <!-- Card 3: Rocket -->
-                    <div class="program-card rocket">
+                    <div id="id-rocket" class="program-card rocket">
                         <div class="card-content">
                             <div class="card-number">
                                 <div class="number-circle">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                                        <path d="M4.5 19A3.5 3.5 0 0 1 8 15.5c.97 0 1.84.4 2.47 1.04l.8-.8A4.5 4.5 0 0 0 8 14.5a4.5 4.5 0 0 0-4.5 4.5H2v2h6v-2H4.5zM20 3l-3 3h2v13h-6v2h8V6h2l-3-3z"></path>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"
+                                        fill="currentColor">
+                                        <path
+                                            d="M8.498 20h7.004A6.523 6.523 0 0 1 12 23.502 6.523 6.523 0 0 1 8.498 20zM18 14.805l2 2.268V19H4v-1.927l2-2.268V9c0-3.483 2.504-6.447 6-7.545C15.496 2.553 18 5.517 18 9v5.805zM12 11a2 2 0 1 0 0-4 2 2 0 0 0 0 4z">
+                                        </path>
                                     </svg>
                                 </div>
                                 <span>03</span>
                             </div>
-                            
+
                             <h2 class="card-title">Rocket</h2>
-                            
+
                             <div class="card-description">
-                                <p>Клиент приходит либо на программу выше (в программах добавить переключатель корпы/гос), либо на тренинг</p>
+                                <p>Клиент приходит либо на программу выше (в программах добавить переключатель
+                                    корпы/гос), либо на тренинг</p>
                                 <p>Скрипт сам узнает категорию продажи.</p>
                                 <p>Необходимые данные клиента: ФИО, тел, tg || email</p>
                                 <p>Спроектировать БД по сущностям user, courses, sells (id_user -> id_courses)</p>
                             </div>
-                            
+
                             <a href="#" class="card-button">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                                    <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"
+                                    fill="currentColor">
+                                    <path
+                                        d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z">
+                                    </path>
                                 </svg>
                                 Оформить
                             </a>
+                            <img style="width: 52%; top: 10px; right: -70px;" class="bg-icon" src="./media/img/shuttle.png" alt="">
+
                         </div>
-                        
+
                         <div class="card-background"></div>
                     </div>
                 </div>
@@ -544,8 +631,7 @@
         <section id="trains">
             <div style="display: flex; align-items: center; margin-bottom: 2rem;">
                 <span style="width: 38px;" class="slide__btn__icon">
-                    <svg width="100%" height="100%" viewBox="0 0 17 21" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
+                    <svg width="100%" height="100%" viewBox="0 0 17 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M3.22218 15.2222C2.79261 15.6518 2.79261 16.3482 3.22218 16.7778C3.65176 17.2074 4.34824 17.2074 4.77782 16.7778L3.22218 15.2222ZM16.1 5C16.1 4.39249 15.6075 3.9 15 3.9L5.1 3.9C4.49249 3.9 4 4.39249 4 5C4 5.60751 4.49249 6.1 5.1 6.1L13.9 6.1L13.9 14.9C13.9 15.5075 14.3925 16 15 16C15.6075 16 16.1 15.5075 16.1 14.9L16.1 5ZM4.77782 16.7778L15.7778 5.77782L14.2222 4.22218L3.22218 15.2222L4.77782 16.7778Z"
                             fill="currentColor" />
@@ -556,8 +642,7 @@
             <table class="training-table">
                 <thead>
                     <tr>
-                        <th>Мероприятия</th>
-                        <th>Описание</th>
+                        <th>Мероприятие</th>
                         <th>Дата</th>
                     </tr>
                 </thead>
@@ -593,13 +678,40 @@
                         <td class="date">12\01\25</td>
                     </tr>
                 </tbody>
+                <!-- <tbody id="mobile-table">
+                    <tr>
+                        <td class="event-name"><strong>Мастер-класс "Бизнес"</strong><br><p  class="description">Не следует, однако забывать, что начало повседневной работы по
+                            формированию позиции играет важную роль в формировании форм развития</p></td>
+                        <td class="date">12\01\25</td>
+                    </tr>
+                    <tr>
+                        <td class="event-name"><strong>Мастер-класс "Бизнес"</strong><br><p  class="description">Не следует, однако забывать, что начало повседневной работы по
+                            формированию позиции играет важную роль в формировании форм развития</p></td>
+                        <td class="date">12\01\25</td>
+                    </tr>
+                    <tr>
+                        <td class="event-name"><strong>Мастер-класс "Бизнес"</strong><br><p  class="description">Не следует, однако забывать, что начало повседневной работы по
+                            формированию позиции играет важную роль в формировании форм развития</p></td>
+                        <td class="date">12\01\25</td>
+                    </tr>
+                    <tr>
+                        <td class="event-name"><strong>Мастер-класс "Бизнес"</strong><br><p  class="description">Не следует, однако забывать, что начало повседневной работы по
+                            формированию позиции играет важную роль в формировании форм развития</p></td>
+                        <td class="date">12\01\25</td>
+                    </tr>
+                    <tr>
+                        <td class="event-name"><strong>Мастер-класс "Бизнес"</strong><br><p  class="description">Не следует, однако забывать, что начало повседневной работы по
+                            формированию позиции играет важную роль в формировании форм развития</p></td>
+                        <td class="date">12\01\25</td>
+                    </tr>
+                    
+                </tbody> -->
             </table>
         </section>
-        <section style="width: 94%; margin-left: auto;margin-right: auto; margin-top: 6rem;">
+        <section id="03-courses" style="width: 94%; margin-left: auto;margin-right: auto; margin-top: 6rem;">
             <div style="display: flex; align-items: center; margin-bottom: 2rem;">
                 <span style="width: 38px;" class="slide__btn__icon">
-                    <svg width="100%" height="100%" viewBox="0 0 17 21" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
+                    <svg width="100%" height="100%" viewBox="0 0 17 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M3.22218 15.2222C2.79261 15.6518 2.79261 16.3482 3.22218 16.7778C3.65176 17.2074 4.34824 17.2074 4.77782 16.7778L3.22218 15.2222ZM16.1 5C16.1 4.39249 15.6075 3.9 15 3.9L5.1 3.9C4.49249 3.9 4 4.39249 4 5C4 5.60751 4.49249 6.1 5.1 6.1L13.9 6.1L13.9 14.9C13.9 15.5075 14.3925 16 15 16C15.6075 16 16.1 15.5075 16.1 14.9L16.1 5ZM4.77782 16.7778L15.7778 5.77782L14.2222 4.22218L3.22218 15.2222L4.77782 16.7778Z"
                             fill="currentColor" />
@@ -615,7 +727,7 @@
                     <div class="cardd-content">
                         <div class="text-cardd-content">
                             <h2 class="cardd-title">Название №1</h2>
-                        <p class="cardd-tag">#Тег</p>
+                            <p class="cardd-tag">#Тег</p>
                         </div>
                         <div class="button-cardd-content">
                             <button class="action-button remove-button">
@@ -631,7 +743,7 @@
                     <div class="cardd-content">
                         <div class="text-cardd-content">
                             <h2 class="cardd-title">Название №1</h2>
-                        <p class="cardd-tag">#Тег</p>
+                            <p class="cardd-tag">#Тег</p>
                         </div>
                         <div class="button-cardd-content">
                             <button class="action-button remove-button">
@@ -647,7 +759,7 @@
                     <div class="cardd-content">
                         <div class="text-cardd-content">
                             <h2 class="cardd-title">Название №1</h2>
-                        <p class="cardd-tag">#Тег</p>
+                            <p class="cardd-tag">#Тег</p>
                         </div>
                         <div class="button-cardd-content">
                             <button class="action-button remove-button">
@@ -661,97 +773,101 @@
         <div class="modal-overlay" id="modalOverlay">
             <div class="modal">
                 <button class="modal-close">&times;</button>
-                    <section id="contact-link">
-                        <div class="form-contact">
-                            <div class="border-line-contact">
-                                <div class="contact-container">
-                                    <div class="contact-info">
-                                        <h1>//Контакты</h1>
-                                        <div class="address-block">
-                                            <div class="label">Адрес:</div>
-                                            <p style="font-size: 16px;">Москва,</p>
-                                            <p style="font-size: 16px;">Улица, Новый Арбат, дом 71</p>
-                                            <p style="font-size: 16px;">142222</p>
+                <section id="contact-link">
+                    <div class="form-contact">
+                        <div class="border-line-contact">
+                            <div class="contact-container">
+                                <div class="contact-info">
+                                    <h1>//Контакты</h1>
+                                    <div class="address-block">
+                                        <div class="label">Адрес:</div>
+                                        <p style="font-size: 16px;">Москва,</p>
+                                        <p style="font-size: 16px;">Улица, Новый Арбат, дом 71</p>
+                                        <p style="font-size: 16px;">142222</p>
+                                    </div>
+                                    <div class="phone">
+                                        <div class="label">Телефон:</div>
+                                        <p style="font-size: 16px;">+7 (999) 123-1241</p>
+                                    </div>
+                                    <div class="social-cards">
+                                        <div class="cardd email">
+                                            <a class="icon-contact" href=""><img src="./media/img/email.png" alt=""></a>
+                                            <p>test@gmail.com</p>
                                         </div>
-                                        <div class="phone">
-                                            <div class="label">Телефон:</div>
-                                            <p style="font-size: 16px;">+7 (999) 123-1241</p>
+                                        <div class="cardd telegram">
+                                            <a class="icon-contact" href=""><img src="./media/img/telegram.png"
+                                                    alt=""></a>
+                                            <p>@tgnickname</p>
                                         </div>
-                                        <div class="social-cards">
-                                            <div class="cardd email">
-                                                <a class="icon-contact" href=""><img src="./media/img/email.png" alt=""></a>
-                                                <p>test@gmail.com</p>
-                                            </div>
-                                            <div class="cardd telegram">
-                                                <a class="icon-contact" href=""><img src="./media/img/telegram.png" alt=""></a>
-                                                <p>@tgnickname</p>
-                                            </div>
-                                            <!-- <div class="cardd alt-email">
+                                        <!-- <div class="cardd alt-email">
                                                 <a class="icon-contact" href=""><img src="./media/img/email.png" alt=""></a>
                                                 <p>test@gmail.com</p>
                                             </div> -->
-                                        </div>
                                     </div>
-                                    <div class="contact-form">
-                                        <form>
-                                            <input type="hidden" id="productId" name="product_id">
-                                            <div class="form-group">
-                                                <div class="label">Имя:</div>
-                                                <input type="text" placeholder="Дмитрий" required>
+                                </div>
+                                <div class="contact-form">
+                                    <form>
+                                        <input type="hidden" id="productId" name="product_id">
+                                        <div class="form-group">
+                                            <div class="label">Имя:</div>
+                                            <input type="text" placeholder="Дмитрий" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="label">Номер:</div>
+                                            <input id="phone" type="tel" placeholder="+7(999)123-4234" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="label">Email:</div>
+                                            <input id="email" type="email" placeholder="test@gmail.com" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <div style="opacity: 0.6;" class="label">Telegram:</div>
+                                            <input type="email" placeholder="test@gmail.com" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="dropdown" id="myDropdown">
+                                                <div class="dropdown-toggle">Выберите курс:</div>
+                                                <ul id="dropdown-menu-course" class="dropdown-menu">
+                                                    <li>Взлет</li>
+                                                    <li>Полет</li>
+                                                    <li>Орбита</li>
+                                                </ul>
+                                                <ul id="dropdown-menu-course drop-train" class="dropdown-menu">
+                                                    <li>Train 1</li>
+                                                    <li>Train 2</li>
+                                                    <li>Train 3</li>
+                                                    <li>Train 4</li>
+                                                </ul>
                                             </div>
-                                            <div class="form-group">
-                                                <div class="label">Номер:</div>
-                                                <input id="phone" type="tel" placeholder="+7(999)123-4234" required>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="label">Email:</div>
-                                                <input id="email" type="email" placeholder="test@gmail.com" required>
-                                            </div>
-                                            <div class="form-group">
-                                                <div style="opacity: 0.6;" class="label">Telegram:</div>
-                                                <input type="email" placeholder="test@gmail.com" required>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="dropdown" id="myDropdown">
-                                                    <div class="dropdown-toggle">Выберите курс:</div>
-                                                    <ul id="dropdown-menu-course" class="dropdown-menu">
-                                                        <li>Взлет</li>
-                                                        <li>Полет</li>
-                                                        <li>Орбита</li>
-                                                    </ul>
-                                                    <ul id="dropdown-menu-course drop-train" class="dropdown-menu">
-                                                        <li>Train 1</li>
-                                                        <li>Train 2</li>
-                                                        <li>Train 3</li>
-                                                        <li>Train 4</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <input type="checkbox" placeholder="test@gmail.com" required>
-                                                <div style="display: inline-block; font-size: 14px; opacity: 0.8;" class="label">Я
-                                                    согласен передать личные данные</div>
-                                            </div>
-                                            <div class="form-group">
-                                                <input type="checkbox" placeholder="test@gmail.com">
-                                                <div style="display: inline-block; font-size: 14px; opacity: 0.8;" class="label">Я
-                                                    согласен получать рассылку</div>
-                                            </div>
-                                            <!-- <div class="checkbox-group">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="checkbox" placeholder="test@gmail.com" required>
+                                            <div style="display: inline-block; font-size: 14px; opacity: 0.8;"
+                                                class="label">Я
+                                                согласен передать личные данные</div>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="checkbox" placeholder="test@gmail.com">
+                                            <div style="display: inline-block; font-size: 14px; opacity: 0.8;"
+                                                class="label">Я
+                                                согласен получать рассылку</div>
+                                        </div>
+                                        <!-- <div class="checkbox-group">
                                                 <input type="checkbox" id="agreement">
                                                 <label for="agreement">Я прочитал и ознакомлен...</label>
                                             </div> -->
-                                            <!-- <button type="submit" class="submit-btn">Оставить заявку</button> -->
-                                            <button type="submit" class="btn btn-primary submit-btn">Оставить заявку</button>
+                                        <!-- <button type="submit" class="submit-btn">Оставить заявку</button> -->
+                                        <button type="submit" class="btn btn-primary submit-btn">Оставить
+                                            заявку</button>
 
-                                        </form>
-                                    </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
-                    </section>
-                </div>
+                    </div>
+                </section>
             </div>
+        </div>
         </div>
     </main>
     <script src="./script.js"></script>

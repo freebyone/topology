@@ -13,11 +13,11 @@
 <body>
     <!-- <header class="header">
         <nav class="nav"> -->
-            <!-- <a href="#">Для кого?</a>
+    <!-- <a href="#">Для кого?</a>
             <a href="#">Обо мне</a>
             <a href="#">Гарантии</a>
             <a href="#">Программы</a> -->
-            <!-- <a href="#feature-link">Обо мне</a>
+    <!-- <a href="#feature-link">Обо мне</a>
             <a href="#my-projects">Мои проекты</a>
             <a href="#01-tal">Талантополия</a>
             <a href="#trains">Тренинги</a>
@@ -39,7 +39,7 @@
                 <span>Бизнес</span>
             </div>
         </div> -->
-        <!-- <div class="buttons">
+    <!-- <div class="buttons">
             <button class="btn btn-outline">Корпы</button>
             <button class="btn btn-dark">Госсектор</button>
         </div> -->
@@ -48,9 +48,9 @@
         <button class="menu-toggle">
             <img src="./media/img/menu.png" alt="">
         </button>
-        
+
         <div class="logo"><img src="./media/img/logo.png" alt="Логотип"></div>
-        
+
         <nav class="nav">
             <!-- <a href="#">Для кого?</a>
             <a href="#">Обо мне</a>
@@ -63,7 +63,7 @@
             <a href="#03-courses">Курсы</a>
             <a href="#contact-link">Контакты</a>
         </nav>
-        
+
         <div class="class-slider">
             <div class="class-slide__item">
                 <div class="icon-wrap">
@@ -82,8 +82,14 @@
 
     <main>
         <section class="hero">
+            <!-- <video autoplay muted loop class="video-background">
+                <source src="./media/1 фильм правки 2.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео.
+            </video> -->
+            <!-- <div class="video-overlay"></div> -->
+
             <div class="hero-content">
-                <div class="hashtag"># ВЗЛЕТ</div>
+                <a class="hashtag" href="#id-rocket"><img src="./media/img/Group 56.svg" alt=""><span>#ROCKET</span></a>
                 <h1 class="title">ТАЛАНТО<br>ПОЛИЯ</h1>
                 <div class="cta-buttons">
                     <button class="btn btn-primary">Оставить заявку</button>
@@ -101,20 +107,33 @@
             <!-- <div class="video-block">
                 <iframe src="" frameborder="0"></iframe>
             </div> -->
+            <div class="modal" id="videoModal">
+                <div class="modal-content">
+                    <button class="close-button" id="closeVideoBtn" aria-label="Закрыть">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                    <div class="video-container" id="videoContainer">
+                    </div>
+                </div>
+            </div>
             <div class="video-panel">
 
                 <div class="video-section vid-white">
                     <p style="opacity: 1; display: block; ">//ВИДЕО</p>
                 </div>
-                <div id="meet-close" style="position: relative;z-index: 6; " class="video-section">
+                <div id="ctaVideoBtn" id="meet-close" style="position: relative;z-index: 6; " class="video-section">
                     <p class="meet-close-p">ПОЗНАКОМИМСЯ ПОБЛИЖЕ?</p>
                     <div class="play-btn">
                         <img src="./media/img/playbtn.svg" alt="Play">
                     </div>
                 </div>
-                <div id="about-prog" style="border-left: 1px solid #fff;" class="video-section">
+                <div id="ctaVideoBtn" id="about-prog" style="border-left: 1px solid #fff;" class="video-section">
                     <p class="meet-close-p">О ПРОГРАММЕ</p>
-                    <div class="play-btn">
+                    <div id="ctaVideoBtn2" class="play-btn">
                         <img src="./media/img/playbtn.svg" alt="Play">
                     </div>
                 </div>
@@ -509,7 +528,7 @@
             <div class="container">
                 <div class="programs-grid">
                     <!-- Card 1: KickStart -->
-                    <div class="program-card kickstart">
+                    <div id="id-kickstart" class="program-card kickstart">
                         <div class="card-content">
                             <div class="card-number">
                                 <div class="number-circle">
@@ -545,7 +564,7 @@
                     </div>
 
                     <!-- Card 2: Global -->
-                    <div class="program-card global">
+                    <div id="id-global" class="program-card global">
                         <div class="card-content">
                             <div class="card-number">
                                 <div class="number-circle">
@@ -586,7 +605,7 @@
                     </div>
 
                     <!-- Card 3: Rocket -->
-                    <div class="program-card rocket">
+                    <div id="id-rocket" class="program-card rocket">
                         <div class="card-content">
                             <div class="card-number">
                                 <div class="number-circle">
@@ -619,7 +638,8 @@
                                 </svg>
                                 Оформить
                             </a>
-                            <img style="width: 52%; top: 10px; right: -70px;" class="bg-icon" src="./media/img/shuttle.png" alt="">
+                            <img style="width: 52%; top: 10px; right: -70px;" class="bg-icon"
+                                src="./media/img/shuttle.png" alt="">
 
                         </div>
 
@@ -642,8 +662,7 @@
             <table class="training-table">
                 <thead>
                     <tr>
-                        <th>Мероприятия</th>
-                        <th>Описание</th>
+                        <th>Мероприятие</th>
                         <th>Дата</th>
                     </tr>
                 </thead>
@@ -679,6 +698,34 @@
                         <td class="date">12\01\25</td>
                     </tr>
                 </tbody>
+                <!-- <tbody id="mobile-table">
+                    <tr>
+                        <td class="event-name"><strong>Мастер-класс "Бизнес"</strong><br><p  class="description">Не следует, однако забывать, что начало повседневной работы по
+                            формированию позиции играет важную роль в формировании форм развития</p></td>
+                        <td class="date">12\01\25</td>
+                    </tr>
+                    <tr>
+                        <td class="event-name"><strong>Мастер-класс "Бизнес"</strong><br><p  class="description">Не следует, однако забывать, что начало повседневной работы по
+                            формированию позиции играет важную роль в формировании форм развития</p></td>
+                        <td class="date">12\01\25</td>
+                    </tr>
+                    <tr>
+                        <td class="event-name"><strong>Мастер-класс "Бизнес"</strong><br><p  class="description">Не следует, однако забывать, что начало повседневной работы по
+                            формированию позиции играет важную роль в формировании форм развития</p></td>
+                        <td class="date">12\01\25</td>
+                    </tr>
+                    <tr>
+                        <td class="event-name"><strong>Мастер-класс "Бизнес"</strong><br><p  class="description">Не следует, однако забывать, что начало повседневной работы по
+                            формированию позиции играет важную роль в формировании форм развития</p></td>
+                        <td class="date">12\01\25</td>
+                    </tr>
+                    <tr>
+                        <td class="event-name"><strong>Мастер-класс "Бизнес"</strong><br><p  class="description">Не следует, однако забывать, что начало повседневной работы по
+                            формированию позиции играет важную роль в формировании форм развития</p></td>
+                        <td class="date">12\01\25</td>
+                    </tr>
+                    
+                </tbody> -->
             </table>
         </section>
         <section id="03-courses" style="width: 94%; margin-left: auto;margin-right: auto; margin-top: 6rem;">
@@ -1214,18 +1261,18 @@
 
 
 
-            const videoElementMeetClose = document.querySelector('#meet-close')
-            const videoElementAboutProg = document.querySelector('#about-prog')
+            // const videoElementMeetClose = document.querySelector('#meet-close')
+            // const videoElementAboutProg = document.querySelector('#about-prog')
 
-            videoElementMeetClose.addEventListener('click', function () {
-                videoElementMeet.pause()
-                videoElementMeet.currentTime = 0
-            })
+            // videoElementMeetClose.addEventListener('click', function () {
+            //     videoElementMeet.pause()
+            //     videoElementMeet.currentTime = 0
+            // })
 
-            videoElementMeetClose.addEventListener('click', function () {
-                videoElementMeet.pause()
-                videoElementMeet.currentTime = 0
-            })
+            // videoElementMeetClose.addEventListener('click', function () {
+            //     videoElementMeet.pause()
+            //     videoElementMeet.currentTime = 0
+            // })
         });
 
 
@@ -1339,41 +1386,151 @@
                 }
             }
         });
-        document.addEventListener('DOMContentLoaded', function() {
-    const menuToggle = document.querySelector('.menu-toggle');
-    const nav = document.querySelector('.nav');
-    
-    function toggleMenu() {
-        menuToggle.classList.toggle('active');
-        nav.classList.toggle('active');
-    }
-    
-    function closeMenu(e) {
-        if (!nav.contains(e.target) && !menuToggle.contains(e.target)) {
-            menuToggle.classList.remove('active');
-            nav.classList.remove('active');
-        }
-    }
-    
-    // Обработчики событий
-    menuToggle.addEventListener('click', toggleMenu);
-    document.addEventListener('click', closeMenu);
-    window.addEventListener('resize', () => {
-        if (window.innerWidth > 1200) {
-            menuToggle.classList.remove('active');
-            nav.classList.remove('active');
-        }
-    });
-    
-    // Закрытие меню при клике на ссылки
-    nav.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', () => {
-            if (window.innerWidth <= 1200) {
-                toggleMenu();
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const nav = document.querySelector('.nav');
+
+            function toggleMenu() {
+                menuToggle.classList.toggle('active');
+                nav.classList.toggle('active');
             }
+
+            function closeMenu(e) {
+                if (!nav.contains(e.target) && !menuToggle.contains(e.target)) {
+                    menuToggle.classList.remove('active');
+                    nav.classList.remove('active');
+                }
+            }
+
+            // Обработчики событий
+            menuToggle.addEventListener('click', toggleMenu);
+            document.addEventListener('click', closeMenu);
+            window.addEventListener('resize', () => {
+                if (window.innerWidth > 1200) {
+                    menuToggle.classList.remove('active');
+                    nav.classList.remove('active');
+                }
+            });
+
+            // Закрытие меню при клике на ссылки
+            nav.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    if (window.innerWidth <= 1200) {
+                        toggleMenu();
+                    }
+                });
+            });
         });
-    });
-});
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+            // Elements
+            // const openVideoBtn = document.getElementById('openVideoBtn');
+            const ctaVideoBtns = document.querySelectorAll('#ctaVideoBtn');
+            const closeVideoBtn = document.getElementById('closeVideoBtn');
+            const videoModal = document.getElementById('videoModal');
+            const videoContainer = document.getElementById('videoContainer');
+
+            // Video URL - replace with your actual video URL
+            // const videoUrl = './media/videomers.mp4';
+            // For direct video file use something like: 'path/to/your/video.mp4'
+
+            // Check if device is mobile
+            const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+            // Function to open video modal
+            function openVideoModal(videoUrl='./media/videomers.mp4') {
+                console.log('asfafs');
+
+                if (isMobile) {
+                    // For mobile: Open video directly in fullscreen
+                    if (videoUrl.includes('youtube.com')) {
+                        // For YouTube videos
+                        const youtubeId = videoUrl.match(/embed\/([^?]+)/)[1];
+                        window.location.href = `https://www.youtube.com/watch?v=${youtubeId}`;
+                    } else {
+                        // For direct video files
+                        createVideoElement(true);
+                        videoModal.classList.add('active');
+                    }
+                } else {
+                    // For desktop: Open in modal
+                    if (videoUrl.includes('youtube.com')) {
+                        // For YouTube videos
+                        videoContainer.innerHTML = `
+                    <iframe 
+                        src="${videoUrl}" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                `;
+                    } else {
+                        // For direct video files
+                        createVideoElement(false,videoUrl);
+                    }
+                    videoModal.classList.add('active');
+                    document.body.style.overflow = 'hidden'; // Prevent scrolling
+                }
+            }
+
+            // Function to create video element
+            function createVideoElement(requestFullscreen,videoUrl) {
+                const video = document.createElement('video');
+                video.src = videoUrl;
+                video.controls = true;
+                video.autoplay = true;
+                videoContainer.innerHTML = '';
+                videoContainer.appendChild(video);
+
+                if (requestFullscreen) {
+                    // Request fullscreen after a small delay to ensure the video is in the DOM
+                    setTimeout(() => {
+                        if (video.requestFullscreen) {
+                            video.requestFullscreen();
+                        } else if (video.webkitRequestFullscreen) { /* Safari */
+                            video.webkitRequestFullscreen();
+                        } else if (video.msRequestFullscreen) { /* IE11 */
+                            video.msRequestFullscreen();
+                        }
+                    }, 100);
+                }
+            }
+
+            // Function to close video modal
+            function closeVideoModal() {
+                videoModal.classList.remove('active');
+                document.body.style.overflow = ''; // Restore scrolling
+                // Clear the video to stop playback
+                videoContainer.innerHTML = '';
+            }
+
+            // Event listeners
+            // openVideoBtn.addEventListener('click', openVideoModal);
+            console.log(ctaVideoBtns);
+            
+            ctaVideoBtns.forEach((btn,ind) => {
+                if (ind === 0) {
+                    btn.addEventListener('click', (e) => openVideoModal('./media/videomers.mp4'));
+                }else if(ind === 1){
+                    btn.addEventListener('click', (e) => openVideoModal('./media/projects.mp4'));
+                }
+            })
+            closeVideoBtn.addEventListener('click', closeVideoModal);
+
+            // Close modal when clicking outside the content
+            videoModal.addEventListener('click', function (e) {
+                if (e.target === videoModal) {
+                    closeVideoModal();
+                }
+            });
+
+            // Close modal with Escape key
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape' && videoModal.classList.contains('active')) {
+                    closeVideoModal();
+                }
+            });
+        });
     </script>
 </body>
 
