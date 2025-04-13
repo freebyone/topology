@@ -891,8 +891,8 @@
                 </div>
             </div>
         </section>
-        <div class="modal" id="talModal">
-            <div class="modal-content">
+        <div style="background: #00000081;" class="modal" id="talModal">
+            <div style="background: #fff; max-width: 1520px;" class="modal-content">
                 <button id="modal-close-tal" class="modal-close" aria-label="Закрыть">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -900,105 +900,110 @@
                         <line x1="6" y1="6" x2="18" y2="18"></line>
                     </svg>
                 </button>
-                <div class="modal-info">
+                <div style="height: 90vh;" class="modal-info">
                     <div class="modal-overlay" id="modalOverlay">
-                        <div class="modal">
-                            <button class="modal-close">&times;</button>
-                            <section id="contact-link">
-                                <div class="form-contact">
-                                    <div class="border-line-contact">
-                                        <div class="contact-container">
-                                            <div class="contact-info">
-                                                <h1>//Контакты</h1>
-                                                <div class="address-block">
-                                                    <div class="label">Адрес:</div>
-                                                    <p style="font-size: 16px;">Москва,</p>
-                                                    <p style="font-size: 16px;">Улица, Новый Арбат, дом 71</p>
-                                                    <p style="font-size: 16px;">142222</p>
+                        <section style="margin-top: 2rem;" id="contact-link">
+                            <div class="form-contact">
+                                <div class="border-line-contact">
+                                    <div class="contact-container">
+                                        <div class="contact-info">
+                                            <h1>//Контакты</h1>
+                                            <div class="address-block">
+                                                <div class="label">Адрес:</div>
+                                                <p style="font-size: 16px;">Москва,</p>
+                                                <p style="font-size: 16px;">Улица, Новый Арбат, дом 71</p>
+                                                <p style="font-size: 16px;">142222</p>
+                                            </div>
+                                            <div class="phone">
+                                                <div class="label">Телефон:</div>
+                                                <p style="font-size: 16px;">+7 (999) 123-1241</p>
+                                            </div>
+                                            <div class="social-cards">
+                                                <div class="cardd email">
+                                                    <a class="icon-contact" href=""><img src="./media/img/email.png"
+                                                            alt=""></a>
+                                                    <p>test@gmail.com</p>
                                                 </div>
-                                                <div class="phone">
-                                                    <div class="label">Телефон:</div>
-                                                    <p style="font-size: 16px;">+7 (999) 123-1241</p>
+                                                <div class="cardd telegram">
+                                                    <a class="icon-contact" href=""><img src="./media/img/telegram.png"
+                                                            alt=""></a>
+                                                    <p>@tgnickname</p>
                                                 </div>
-                                                <div class="social-cards">
-                                                    <div class="cardd email">
-                                                        <a class="icon-contact" href=""><img src="./media/img/email.png" alt=""></a>
-                                                        <p>test@gmail.com</p>
-                                                    </div>
-                                                    <div class="cardd telegram">
-                                                        <a class="icon-contact" href=""><img src="./media/img/telegram.png"
-                                                                alt=""></a>
-                                                        <p>@tgnickname</p>
-                                                    </div>
-                                                    <!-- <div class="cardd alt-email">
+                                                <!-- <div class="cardd alt-email">
                                                             <a class="icon-contact" href=""><img src="./media/img/email.png" alt=""></a>
                                                             <p>test@gmail.com</p>
                                                         </div> -->
-                                                </div>
                                             </div>
-                                            <div class="contact-form">
-                                                <form>
-                                                    <input type="hidden" id="productId" name="product_id">
-                                                    <div class="form-group">
-                                                        <div class="label">Имя:</div>
-                                                        <input type="text" placeholder="Дмитрий" required>
+                                        </div>
+                                        
+                                        <div class="contact-form">
+                                            <div>
+                                                <h2 style="color: #06f;">Добро пожаловать на курс <span id="modal-course-name">TALENTOPOLY. KICKSTART</span></h2>
+                                                <p id="modal-name-desc">Первый шаг к созданию вашего уникального продукта!<br> <p style="margin-top: .5rem; opacity: .6;
+                                                font-size: 12px;">Пожалуйста, заполните форму, чтобы мы лучше понимали ваши цели:</p></p>
+                                            </div>
+                                            <form style="margin-top: 1rem;">
+                                                <input type="hidden" id="productId" name="product_id">
+                                                <div class="form-group">
+                                                    <div class="label">Имя:</div>
+                                                    <input type="text" placeholder="Дмитрий" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="label">Номер:</div>
+                                                    <input id="phone" type="tel" placeholder="+7(999)123-4234" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="label">Email:</div>
+                                                    <input id="email" type="email" placeholder="test@gmail.com"
+                                                        required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div style="opacity: 0.6;" class="label">Расскажите о вас и почему вы хотите пройти эту программу:</div>
+                                                    <textarea style="width: 100%; height: 62px;" type="email" placeholder="Получить первый опыт запуска? //Узнать, как протестировать идею? //Своя версия
+                                                    " required></textarea>
+                                                </div>
+                                                <!-- <div class="form-group">
+                                                    <div class="dropdown" id="myDropdown">
+                                                        <div class="dropdown-toggle">Выберите курс:</div>
+                                                        <ul id="dropdown-menu-course" class="dropdown-menu">
+                                                            <li>Взлет</li>
+                                                            <li>Полет</li>
+                                                            <li>Орбита</li>
+                                                        </ul>
+                                                        <ul id="dropdown-menu-course drop-train" class="dropdown-menu">
+                                                            <li>Train 1</li>
+                                                            <li>Train 2</li>
+                                                            <li>Train 3</li>
+                                                            <li>Train 4</li>
+                                                        </ul>
                                                     </div>
-                                                    <div class="form-group">
-                                                        <div class="label">Номер:</div>
-                                                        <input id="phone" type="tel" placeholder="+7(999)123-4234" required>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <div class="label">Email:</div>
-                                                        <input id="email" type="email" placeholder="test@gmail.com" required>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <div style="opacity: 0.6;" class="label">Telegram:</div>
-                                                        <input type="email" placeholder="test@gmail.com" required>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <div class="dropdown" id="myDropdown">
-                                                            <div class="dropdown-toggle">Выберите курс:</div>
-                                                            <ul id="dropdown-menu-course" class="dropdown-menu">
-                                                                <li>Взлет</li>
-                                                                <li>Полет</li>
-                                                                <li>Орбита</li>
-                                                            </ul>
-                                                            <ul id="dropdown-menu-course drop-train" class="dropdown-menu">
-                                                                <li>Train 1</li>
-                                                                <li>Train 2</li>
-                                                                <li>Train 3</li>
-                                                                <li>Train 4</li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <input type="checkbox" placeholder="test@gmail.com" required>
-                                                        <div style="display: inline-block; font-size: 14px; opacity: 0.8;"
-                                                            class="label">Я
-                                                            согласен передать личные данные</div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <input type="checkbox" placeholder="test@gmail.com">
-                                                        <div style="display: inline-block; font-size: 14px; opacity: 0.8;"
-                                                            class="label">Я
-                                                            согласен получать рассылку</div>
-                                                    </div>
-                                                    <!-- <div class="checkbox-group">
+                                                </div> -->
+                                                <div class="form-group">
+                                                    <input type="checkbox" placeholder="test@gmail.com" required>
+                                                    <div style="display: inline-block; font-size: 14px; opacity: 0.8;"
+                                                        class="label">Я
+                                                        согласен передать личные данные</div>
+                                                </div>
+                                                <div style="display: flex; align-items: flex-start;" class="form-group">
+                                                    <input style="margin-top: .2rem;" type="checkbox" placeholder="test@gmail.com">
+                                                    <div style="display: inline-block; font-size: 14px; opacity: 0.8;margin-left: .2rem;"
+                                                        class="label">Хочу получать материалы по созданию своего продукта, чек-листы и полезную рассылку без спама</div>
+                                                </div>
+                                                <!-- <div class="checkbox-group">
                                                             <input type="checkbox" id="agreement">
                                                             <label for="agreement">Я прочитал и ознакомлен...</label>
                                                         </div> -->
-                                                    <!-- <button type="submit" class="submit-btn">Оставить заявку</button> -->
-                                                    <button type="submit" class="btn btn-primary submit-btn">Оставить
-                                                        заявку</button>
-            
-                                                </form>
-                                            </div>
+                                                <!-- <button type="submit" class="submit-btn">Оставить заявку</button> -->
+                                                <button type="submit" style="margin-top: 1rem; cursor: pointer; transition: all .5s ease-in;" class="btn btn-primary submit-btn">Оставить
+                                                    заявку</button>
+
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
-                            </section>
-            
-                        </div>
+                            </div>
+                        </section>
+
                     </div>
                 </div>
             </div>
@@ -1835,7 +1840,32 @@
                     console.log(btn.getAttribute('data-type'));
                     const programm = btn.getAttribute('data-type')
                     if (programm === 'kick') {
+                        talModal.querySelector('#modal-course-name').textContent = "TALENTOPOLY. KICKSTART"
+                        talModal.querySelector('#modal-name-desc').textContent = "Первый шаг к созданию вашего уникального продукта!"
+                        // Show modal
+                        talModal.classList.add('active');
+                        document.body.style.overflow = 'hidden'; // Prevent scrolling
+                        closeButtonTal.addEventListener('click', (e) => {
+                            console.log('s0jndf0pisdjpf');
 
+                            talModal.classList.remove('active');
+                            document.body.style.overflow = ''; // Restore scrolling
+                        });
+                    }else if(programm === 'global'){
+                        talModal.querySelector('#modal-course-name').textContent = "TALENTOPOLY. GLOBAL"
+                        talModal.querySelector('#modal-name-desc').textContent = "Расширяйте границы своего бизнеса!"
+                        // Show modal
+                        talModal.classList.add('active');
+                        document.body.style.overflow = 'hidden'; // Prevent scrolling
+                        closeButtonTal.addEventListener('click', (e) => {
+                            console.log('s0jndf0pisdjpf');
+
+                            talModal.classList.remove('active');
+                            document.body.style.overflow = ''; // Restore scrolling
+                        });
+                    }else if(programm === 'rocket'){
+                        talModal.querySelector('#modal-course-name').textContent = "TALENTOPOLY. ROCKET"
+                        talModal.querySelector('#modal-name-desc').textContent = "На Марсе тоже нужен бизнес!"
                         // Show modal
                         talModal.classList.add('active');
                         document.body.style.overflow = 'hidden'; // Prevent scrolling

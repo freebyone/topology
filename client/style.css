@@ -709,7 +709,7 @@ main a{
 }
 
 .label {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     color: #000;
     margin-bottom: 5px
 }
@@ -892,7 +892,8 @@ main a{
 }
 
 .form-group input {
-    transition: all .4s ease-in
+    transition: all .4s ease-in;
+    background: transparent;
 }
 
 .form-group input:focus {
@@ -902,7 +903,7 @@ main a{
 input[type=text],
 input[type=email],
 input[type=tel] {
-    background-color: #e8e8e8;
+    /* background-color: #e8e8e8; */
     width: 100%;
     padding: 10px 0;
     border: none;
