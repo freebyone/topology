@@ -4,7 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Montserrat", serif
+    font-family: "Montserrat", serif;
+    /* outline:1px solid red; */
 }
 
 html {
@@ -2977,6 +2978,18 @@ footer .fot-cont {
 }
 
 @media (min-width: 200px) and (max-width: 1100px) {
+    .contact-container{
+        flex-direction: column;
+    }
+    .contact-info{
+        width: 100%;
+    }
+    .contact-form{
+        width: 100%;
+    }
+    .modal-content {
+        overflow: scroll;
+    }
     footer {
         padding: 2rem 2rem;
     }
@@ -2988,10 +3001,10 @@ footer .fot-cont {
     footer .h1-mobile {
         display: block;
         position: absolute;
-        font-size: 86px;
+        font-size: 96px;
         margin-top: 0rem;
         opacity: .07;
-        width: 100%;
+        width: 70%;
         text-wrap: wrap;
         line-height: 1;
     }
@@ -3241,7 +3254,7 @@ footer .fot-cont {
 
     .program-card {
         margin-top: 1rem;
-        height: auto;
+        height: 70vh;
     }
 }
 

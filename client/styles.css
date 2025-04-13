@@ -448,7 +448,24 @@
 
     .program-card {
         margin-top: 1rem;
-        height: auto;
+        height: 90vh;
+    }
+
+    .card-description {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .card-description h2{
+        font-size: 16px;
+    }
+
+    .card-description .desk{
+        display: none;
+    }
+
+    .card-description .mob{
+        display: block;
     }
 }
 
