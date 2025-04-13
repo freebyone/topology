@@ -2675,7 +2675,7 @@ input[type=tel] {
 
 .card-content {
     position: relative;
-    height: 490px;
+    max-height:620px;
     padding: 20px;
     display: flex;
     flex-direction: column;
